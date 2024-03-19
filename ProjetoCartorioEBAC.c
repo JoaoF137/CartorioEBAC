@@ -183,6 +183,7 @@ printf("===================================== Menu Principal ===================
 printf("\t1 - Registrar Usuários\t\n");
 printf("\t2 - Consultar Usuários\t\n");
 printf("\t3 - Deletar Usuários\t\n");
+printf("\t4 - Sair do Sistema\t\n");
 printf("\nDigite a opção desejada:");
 
 scanf("%d",&opcao); // armazena a opçãoo do usuário
@@ -209,6 +210,12 @@ case 3:
 
     deletaUsuario();
     system("cls");
+    break;
+
+case 4: //função para sair do sistema
+
+    printf("\n\nObrigado por utilizar o sistema!\n\n");
+    return 0;
     break;
 
 default:
